@@ -1,0 +1,16 @@
+{
+  "name": "get-data",
+  "version": "1.0.0",
+  "description": "get json data ",
+  "main": "get-data.js",
+  "dependencies": {
+    "request":"^2.65.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aqib Hameed",
+  "license": "ISC"
+}
