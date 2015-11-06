@@ -2,7 +2,7 @@ var request = require("request");
 
 var publicApi = {};
 // get orderbook
-publicApi.orderbook = function(currency_code,callback) {
+publicApi.orderbook = function(currencyCode,callback) {
   var url = "https://api.blinktrade.com/api/v1/"+currency_code+"/orderbook";
   request({
     url: url,
@@ -14,7 +14,7 @@ publicApi.orderbook = function(currency_code,callback) {
 
 
 // get ticker
-publicApi.ticker = function(currency_code,callback) {
+publicApi.ticker = function(currencyCode,callback) {
   var url = "https://api.blinktrade.com/api/v1/"+currency_code+"/ticker";
   request({
     url: url,
@@ -25,7 +25,7 @@ publicApi.ticker = function(currency_code,callback) {
 };
 
 // get last 24 trades
-publicApi.trades = function(currency_code,callback) {
+publicApi.trades = function(currencyCode,callback) {
   var url = "https://api.blinktrade.com/api/v1/"+currency_code+"/trades";
   request({
     url: url,
