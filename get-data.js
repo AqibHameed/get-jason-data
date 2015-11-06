@@ -1,6 +1,6 @@
 var request = require("request");
 
-var api = {};
+var publicApi = {};
 
 // get orderbook
 publicApi.orderbook = function(callback) {
@@ -15,7 +15,7 @@ publicApi.orderbook = function(callback) {
 
 
 // get ticker
-publicApi.ticker = function() {
+publicApi.ticker = function(callback) {
   var url = "https://api.blinktrade.com/api/v1/PKR/ticker";
   request({
     url: url,
@@ -26,7 +26,7 @@ publicApi.ticker = function() {
 };
 
 // get last 24 trades
-publicApi.trades = function() {
+publicApi.trades = function(callback) {
   var url = "https://api.blinktrade.com/api/v1/PKR/trades";
   request({
     url: url,
