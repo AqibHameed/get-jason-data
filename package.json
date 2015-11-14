@@ -5,6 +5,7 @@
   "main": "get-data.js",
   "dependencies": {
     "request":"^2.65.0"
+    "crypto":"^0.0.3"
   },
   "devDependencies": {
   },
